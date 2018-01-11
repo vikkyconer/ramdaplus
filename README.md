@@ -55,4 +55,23 @@ R.sum([{a: 1, b: 2}, { a: 2, b: 3 }, { a: 3, b: 4 }], [ 'a', 'b' ]); //=> [ 6,
 
 ```
 
+# Filter
 
+```bash
+( [Number/Objects]/Object, function ) -> [Number/Object]
+```
+
+```bash
+function isEven(val) {
+  return val % 2 === 0;
+}
+
+function isEvenObject(val) {
+  return val.a % 2 === 0;
+}
+
+R.filter([1,2,3], isEven)
+R.filter([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
+isEvenObject)
+R.filter( { a: 1, b: 2, c: 3 }, isEven)
+```
