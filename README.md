@@ -70,8 +70,8 @@ function isEvenObject(val) {
   return val.a % 2 === 0;
 }
 
-R.filter([1,2,3], isEven)
+R.filter([1,2,3], isEven); //=> [ 2 ]
 R.filter([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
-isEvenObject)
-R.filter( { a: 1, b: 2, c: 3 }, isEven)
+isEvenObject); //=> [ { a: 2, b: 'bcd' } ]
+R.filter( { a: 1, b: 2, c: 3 }, isEven); //=> [ { b: 2 } ]
 ```
