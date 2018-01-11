@@ -75,3 +75,17 @@ R.filter([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
 isEvenObject); //=> [ { a: 2, b: 'bcd' } ]
 R.filter( { a: 1, b: 2, c: 3 }, isEven); //=> [ { b: 2 } ]
 ```
+
+# Find
+
+```bash
+( [Number/Objects], value, key ) -> Number/Object
+```
+
+```bash
+R.find([1,2,3], 2); //=> [ 2 ]
+R.find([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
+2, 'a'); //=> [ { a: 2, b: 'bcd' } ]
+R.find([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
+'bcd', 'b'); //=> [ { a: 2, b: 'bcd' } ]
+```

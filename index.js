@@ -11,6 +11,7 @@ exports.sum = function(array, values) {
   }, 0)
 }
 
+// TODO: correct names
 exports.filter = function(array, func) {
   if(!Array.isArray(array)) {
     const values = Object.values(array)
@@ -23,4 +24,14 @@ exports.filter = function(array, func) {
     }, [])
   }
   return array.filter(func);
+}
+
+// TODO: correct names
+exports.find = function(array, value, key) {
+  return array.find(( object ) => {
+    if(typeof( object ) === "object") {
+      return object[key] === value;
+    }
+    return object === value;
+  })
 }
