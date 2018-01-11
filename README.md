@@ -109,3 +109,16 @@ R.map([ { a: 1, b: 2, c: 3 }, { d: 4, e: 5, f: 6 } ], double); //=> [ { a: 2,
 b: 4, c: 6 }, { d: 8, e: 10, f: 12 } ] 
 
 ```
+
+# Merge
+
+```bash
+( Object, Object ) -> Object
+```
+
+```bash
+
+R.merge( { a: 1, b: 2, c: 3 }, { a: 4, d: 3, c: 6 } ); //=> { a: 4, b: 2, c: 6,
+d: 3 }
+
+```

@@ -55,3 +55,7 @@ exports.map = function(array, func) {
     })
   }
 }
+
+exports.merge = function(oldObj, newObj) {
+  return { ...oldObj, ...newObj }
+}
