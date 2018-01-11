@@ -1,3 +1,4 @@
+// TODO: correct names
 exports.sum = function(array, values) {
   if(values) {
     return values.map((value) => {
@@ -11,7 +12,6 @@ exports.sum = function(array, values) {
   }, 0)
 }
 
-// TODO: correct names
 exports.filter = function(array, func) {
   if(!Array.isArray(array)) {
     const values = Object.values(array)
@@ -26,7 +26,6 @@ exports.filter = function(array, func) {
   return array.filter(func);
 }
 
-// TODO: correct names
 exports.find = function(array, value, key) {
   return array.find(( object ) => {
     if(typeof( object ) === "object") {
@@ -34,4 +33,25 @@ exports.find = function(array, value, key) {
     }
     return object === value;
   })
+}
+
+exports.map = function(array, func) {
+  if(Array.isArray(array)) {
+    return array.map((value) => {
+      if(typeof(value) === "object") {
+        const values = Object.values(value)
+        const keys = Object.keys(value)
+        return values.map((value, index) => {
+          return { [ keys[index]]: func(value) }
+        })
+      }
+    })
+  }
+  if(typeof(array) === "object") {
+    const values = Object.values(array)
+    const keys = Object.keys(array)
+    return values.map((value, index) => {
+      return { [ keys[index]]: func(value) }
+    })
+  }
 }
