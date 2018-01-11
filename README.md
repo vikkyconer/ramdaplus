@@ -28,12 +28,6 @@ Then in console :
 const R = require('ramdaplus');
 ```
 
-To use directly in the browser:
-
-```html
-<script src="path/to/yourCopyOf/ramda.js"></script>
-```
-
 ## Documentation
 
 # Sum
