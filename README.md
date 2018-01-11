@@ -25,7 +25,7 @@ $ npm install ramdaplus
 Then in console :
 
 ```javascript
-const R = require('ramda');
+const R = require('ramdaplus');
 ```
 
 To use directly in the browser:
