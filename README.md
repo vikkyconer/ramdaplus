@@ -2,13 +2,10 @@
 A functional library for JS programmers. Inspired by ramda https://github.com/ramda/ . It's goal is that you should never mutate your data at server side
 
 # Why RamdaPlus ?
-I have used ramda and worked without ramda. I always tries to write immutable
-code. I was able to achive this with ramda but there was something missing. So,
-I decided to make Ramda Plus which is a hybrid mixture of ramda concept and
-javacript core funcitons. Hope you guys enjoy using it. It is still in very
-development phase so bear with me as it will be covering all of the ramda
-features once we reach 1.0.0 version. Until then test it and suggest if any
-room for improvement.
+RamdaPlus gives you power of ramda with some extensive features which are
+missing in ramda. We have covered some basic features for now but eventually
+will add all ramda functions with extensive support plus will also add extra
+features.
 
 # What's different than ramda ?
 It gives you the power of javascript core functions implemented in functional
