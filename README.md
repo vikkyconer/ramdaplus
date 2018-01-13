@@ -2,9 +2,9 @@
 A functional library for JS programmers. Inspired by ramda https://github.com/ramda/ . It's goal is that you should never mutate your data at server side
 
 # Why RamdaPlus ?
-RamdaPlus gives you power of ramda with some extensive features which are
-missing in ramda. We have covered some basic features for now but eventually
-will add all ramda functions with extensive support plus will also add extra
+RamdaPlus gives you power of ramda and Lodash combined with some extensive features.
+We have covered some basic features for now but eventually
+will add all ramda and loadash functions with extensive support plus will also add extra
 features.
 
 # What's different than ramda ?
@@ -130,5 +130,22 @@ d: 3 }
 
 R.merge( { NoOfSchools: { NoOfClasses: 20 } } ); //=> { noOfSchools:
 { noOfClasses: 20 } }
+
+```
+
+# MapValues
+
+```bash
+( Object, func ) -> Object
+```
+
+```bash
+
+function double(value) {
+  return value * 2;
+}
+
+R.merge( { NoOfSchools: { NoOfClasses: 20 }, NoOfStudents: 400 }, double ); //=> { NoOfSchools:
+{ NoOfClasses: 40 }, NoOfStudents: 800 }
 
 ```

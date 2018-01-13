@@ -70,3 +70,13 @@ exports.camelCase = function(object) {
   })
   return response;
 }
+
+exports.mapValues = function(object, func) {
+  const keys = Object.keys(object);
+  var response = {};
+  keys.forEach((key) => {
+    const updatedValue = ( typeof(object[key]) === 'object' ) ? exports.mapKeys(object[key], func) : func(object[key]);
+    response[key] = updatedValue;
+  })
+  return response;
+}
