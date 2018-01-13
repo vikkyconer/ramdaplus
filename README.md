@@ -119,3 +119,16 @@ R.merge( { a: 1, b: 2, c: 3 }, { a: 4, d: 3, c: 6 } ); //=> { a: 4, b: 2, c: 6,
 d: 3 }
 
 ```
+
+# CamelCase
+
+```bash
+( Object ) -> Object
+```
+
+```bash
+
+R.merge( { NoOfSchools: { NoOfClasses: 20 } } ); //=> { noOfSchools:
+{ noOfClasses: 20 } }
+
+```
