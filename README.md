@@ -22,7 +22,7 @@ $ npm install ramdaplus
 Then in console :
 
 ```javascript
-const R = require('ramdaplus');
+const _R = require('ramdaplus');
 ```
 
 ## Documentation
@@ -37,11 +37,11 @@ const R = require('ramdaplus');
 In this we provide adding normal sum with adding values in array of objects
 
 ```bash
-R.sum([1,2,3,4]); //=> 10
+_R.sum([1,2,3,4]); //=> 10
 
-R.sum([{a: 1, b: 'abc'}, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }], [ 'a' ]); //=> [ 6 ]
+_R.sum([{a: 1, b: 'abc'}, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }], [ 'a' ]); //=> [ 6 ]
 
-R.sum([{a: 1, b: 2}, { a: 2, b: 3 }, { a: 3, b: 4 }], [ 'a', 'b' ]); //=> [ 6,
+_R.sum([{a: 1, b: 2}, { a: 2, b: 3 }, { a: 3, b: 4 }], [ 'a', 'b' ]); //=> [ 6,
 9 ]
 
 ```
@@ -61,12 +61,12 @@ function isEvenObject(val) {
   return val.a % 2 === 0;
 }
 
-R.filter([1,2,3], isEven); //=> [ 2 ]
+_R.filter([1,2,3], isEven); //=> [ 2 ]
 
-R.filter([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
+_R.filter([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
 isEvenObject); //=> [ { a: 2, b: 'bcd' } ]
 
-R.filter( { a: 1, b: 2, c: 3 }, isEven); //=> [ { b: 2 } ]
+_R.filter( { a: 1, b: 2, c: 3 }, isEven); //=> [ { b: 2 } ]
 
 ```
 
@@ -77,12 +77,12 @@ R.filter( { a: 1, b: 2, c: 3 }, isEven); //=> [ { b: 2 } ]
 ```
 
 ```bash
-R.find([1,2,3], 2); //=> [ 2 ]
+_R.find([1,2,3], 2); //=> [ 2 ]
 
-R.find([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
+_R.find([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
 2, 'a'); //=> [ { a: 2, b: 'bcd' } ]
 
-R.find([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
+_R.find([{ a: 1, b: 'abc' }, { a: 2, b: 'bcd' }, { a: 3, b: 'cde' }],
 'bcd', 'b'); //=> [ { a: 2, b: 'bcd' } ]
 
 ```
@@ -98,12 +98,12 @@ function double(val) {
   return val * 2;
 }
 
-R.map([1,2,3], double); //=> [2, 4, 6 ]
+_R.map([1,2,3], double); //=> [2, 4, 6 ]
 
-R.map({ a: 1, b: 2, c: 3 }, double); //=> { a: 2, b: 4, c: 6 }
+_R.map({ a: 1, b: 2, c: 3 }, double); //=> { a: 2, b: 4, c: 6 }
 
-R.map([ { a: 1, b: 2, c: 3 }, { d: 4, e: 5, f: 6 } ], double); //=> [ { a: 2,
-b: 4, c: 6 }, { d: 8, e: 10, f: 12 } ] 
+_R.map([ { a: 1, b: 2, c: 3 }, { d: 4, e: 5, f: 6 } ], double); //=> [ { a: 2,
+b: 4, c: 6 }, { d: 8, e: 10, f: 12 } ]
 
 ```
 
@@ -115,7 +115,7 @@ b: 4, c: 6 }, { d: 8, e: 10, f: 12 } ]
 
 ```bash
 
-R.merge( { a: 1, b: 2, c: 3 }, { a: 4, d: 3, c: 6 } ); //=> { a: 4, b: 2, c: 6,
+_R.merge( { a: 1, b: 2, c: 3 }, { a: 4, d: 3, c: 6 } ); //=> { a: 4, b: 2, c: 6,
 d: 3 }
 
 ```
@@ -128,7 +128,7 @@ d: 3 }
 
 ```bash
 
-R.merge( { NoOfSchools: { NoOfClasses: 20 } } ); //=> { noOfSchools:
+_R.camelCase( { NoOfSchools: { NoOfClasses: 20 } } ); //=> { noOfSchools:
 { noOfClasses: 20 } }
 
 ```
@@ -145,7 +145,7 @@ function double(value) {
   return value * 2;
 }
 
-R.merge( { NoOfSchools: { NoOfClasses: 20 }, NoOfStudents: 400 }, double ); //=> { NoOfSchools:
+_R.mapValues( { NoOfSchools: { NoOfClasses: 20 }, NoOfStudents: 400 }, double ); //=> { NoOfSchools:
 { NoOfClasses: 40 }, NoOfStudents: 800 }
 
 ```
