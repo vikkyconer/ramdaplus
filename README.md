@@ -149,3 +149,14 @@ _R.mapValues( { NoOfSchools: { NoOfClasses: 20 }, NoOfStudents: 400 }, double );
 { NoOfClasses: 40 }, NoOfStudents: 800 }
 
 ```
+
+# Compact
+
+```bash
+( array ) -> array
+```
+
+```bash
+_R.compact( [ 1, 'india', '', 2, 0, false, 3, null, undefined, NaN ] );  //=>
+[ 1, 'india', 2, 3, ]
+```
