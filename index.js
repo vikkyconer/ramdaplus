@@ -6,9 +6,3 @@ exports.merge = require('./src/merge');
 exports.camelCase = require('./src/camelCase');
 exports.mapValues = require('./src/mapValues');
 exports.compact = require('./src/compact');
-
-
-
-
-
-
