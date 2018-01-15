@@ -1,6 +1,6 @@
 {
   "name": "ramdaplus",
-  "version": "0.1.10",
+  "version": "0.2.1",
   "description": "A functional library for JS programmers. Inspired by ramda. It's goal is that you should never mutate your data at server side",
   "main": "index.js",
   "scripts": {
