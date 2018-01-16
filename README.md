@@ -160,3 +160,24 @@ _R.mapValues( { NoOfSchools: { NoOfClasses: 20 }, NoOfStudents: 400 }, double );
 _R.compact( [ 1, 'india', '', 2, 0, false, 3, null, undefined, NaN ] );  //=>
 [ 1, 'india', 2, 3, ]
 ```
+
+# Chunk
+
+```bash
+( array, size ) -> array
+```
+
+```bash
+_R.compact( [ 1, 2, 3, 4, 5 ], 2 );  //=> [ [ 1, 2 ], [ 3, 4 ], [ 5 ] ]
+```
+
+# Concat
+
+```bash
+( array, [values] ) -> array
+```
+
+```bash
+_R.compact( [ 1,2,3,4,5 ], 6, [7], [[8,9]] );  //=> [ 1, 2, 3, 4, 5, 6, 7,
+[ 8, 9  ]  ]
+```
