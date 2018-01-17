@@ -17,5 +17,8 @@
     "JS"
   ],
   "author": "Vikas Chandra <vikaschandra893@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  }
 }
