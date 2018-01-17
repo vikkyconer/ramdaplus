@@ -8,3 +8,4 @@ exports.mapValues = require('./src/mapValues');
 exports.compact = require('./src/compact');
 exports.chunk = require('./src/chunk');
 exports.concat = require('./src/concat');
+exports.drop = require('./src/drop');
