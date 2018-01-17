@@ -1,14 +1,31 @@
 const sum = function(array, values) {
   if(values) {
+    if(!Array.isArray(values)) {
+      const firstValue = array[0];
+      const updatedArray = array.slice(1);
+      if(!firstValue[values]) {
+        return 0;
+      }
+      return updatedArray.reduce((acc, currentObject) => {
+        return acc + currentObject[values];
+      }, firstValue[values])
+    }
     return values.map((value) => {
-      return array.reduce((acc, currentObject) => {
+      const firstValue = array[0];
+      const updatedArray = array.slice(1);
+      if(!firstValue[value]) {
+        return 0;
+      }
+      return updatedArray.reduce((acc, currentObject) => {
         return acc + currentObject[value];
-      }, 0)
+      }, firstValue[value])
     })
   }
-  return array.reduce((acc, value) => {
+  const firstValue = array[0];
+  const updatedArray = array.slice(1);
+  return updatedArray.reduce((acc, value) => {
     return acc + value;
-  }, 0)
+  }, firstValue)
 }
 
 module.exports = sum;

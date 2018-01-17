@@ -7,7 +7,7 @@
         $ git checkout -b <branch>
 
 3.  If adding a function `_R.foo`, define it in `src/foo.js`, export it from
-    `index.js`, and include unit tests in `test/foo.js`. It is not necessary
+    `index.js`, and include unit tests in `spec/foo.js`. It is not necessary
     to include the `@since` annotation for new functions as it will be set
     during the release process of the following release. If adding an internal
     function `_foo`, define it in `source/internal/_foo.js`.
