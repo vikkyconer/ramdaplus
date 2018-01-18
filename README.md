@@ -209,3 +209,14 @@ _R.dropRight( [ 1,2,3,4 ], 0 );  //=> [ 1,2,3,4 ]
 _R.dropRight( [ 1,2,3,4 ], 2 );  //=> [ 1,2 ]
 _R.dropRight( [ 1,2,3,4 ], 5 );  //=> []
 ```
+
+# Flatten
+
+```bash
+( array ) -> array
+```
+
+```bash
+_R.flatten( [1, [2, [3, [4]], 5]] );  //=> [1, 2, [3, [4]], 5]
+_R.flatten( { a: 1, b: { c: 2 } } );  //=> 'array required'
+```

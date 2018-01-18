@@ -10,3 +10,4 @@ exports.chunk = require('./src/chunk');
 exports.concat = require('./src/concat');
 exports.drop = require('./src/drop');
 exports.dropRight = require('./src/dropRight');
+exports.flatten = require('./src/flatten');
