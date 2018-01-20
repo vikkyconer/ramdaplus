@@ -220,3 +220,13 @@ _R.dropRight( [ 1,2,3,4 ], 5 );  //=> []
 _R.flatten( [1, [2, [3, [4]], 5]] );  //=> [1, 2, [3, [4]], 5]
 _R.flatten( { a: 1, b: { c: 2 } } );  //=> 'array required'
 ```
+# Flatten Deep
+
+```bash
+( array ) -> array
+```
+
+```bash
+_R.flattenDeep( [1, [2, [3, [4]], 5]] );  //=> [1, 2, 3, 4, 5]
+_R.flattenDeep( { a: 1, b: { c: 2 } } );  //=> 'array required'
+```
