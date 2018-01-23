@@ -29,6 +29,7 @@ const _R = require('ramdaplus');
 ```
 
 ## Documentation
+https://ramdaplus.github.io/
 
 # Sum
 

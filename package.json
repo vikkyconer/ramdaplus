@@ -1,6 +1,6 @@
 {
   "name": "ramdaplus",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "A functional library for JS programmers. Inspired by ramda. It's goal is that you should never mutate your data at server side",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/vikkyconer/ramdaplus.git"
   },
+  "homepage": "https://ramdaplus.github.io/",
   "keywords": [
     "Funtional",
     "Ramda",
