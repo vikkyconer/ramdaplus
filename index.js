@@ -12,3 +12,4 @@ exports.drop = require('./src/drop');
 exports.dropRight = require('./src/dropRight');
 exports.flatten = require('./src/flatten');
 exports.flattenDeep = require('./src/flattenDeep');
+exports.fromPairs = require('./src/fromPairs');
