@@ -1,4 +1,4 @@
-const _R = require('../')
+const _R = require('../');
 
 describe('drop', function() {
   it('should drop first element of the array if no other argument passed', function() {
