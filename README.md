@@ -3,6 +3,7 @@ A functional library for JS programmers.Inspired by Lodash and Ramda. It's goal 
 
 [![Build
 Status](https://travis-ci.org/vikkyconer/ramdaplus.svg?branch=master)](https://travis-ci.org/vikkyconer/ramdaplus)
+[![npm version](https://badge.fury.io/js/ramdaplus.svg)](https://badge.fury.io/js/ramdaplus)
 [![Gitter](https://badges.gitter.im/Join_Chat.svg)](https://gitter.im/ramdaplus/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Why RamdaPlus ?
