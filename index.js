@@ -15,3 +15,4 @@ exports.flattenDeep = require('./src/flattenDeep');
 exports.fromPairs = require('./src/fromPairs');
 exports.head = require('./src/head');
 exports.intersection = require('./src/intersection');
+exports.join = require('./src/join');
