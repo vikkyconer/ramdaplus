@@ -19,3 +19,4 @@ exports.join = require('./src/join');
 exports.last = require('./src/last');
 exports.pull = require('./src/pull');
 exports.reverse = require('./src/reverse');
+exports.toPairs = require('./src/toPairs');
