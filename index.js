@@ -21,3 +21,4 @@ exports.pull = require('./src/pull');
 exports.reverse = require('./src/reverse');
 exports.toPairs = require('./src/toPairs');
 exports.invertObj = require('./src/invertObj');
+exports.zipWith = require('./src/zipWith');
