@@ -1,5 +1,5 @@
 # ramdaplus
-A functional library for JS programmers.Inspired by Lodash and Ramda. It's goal is that you should never mutate your data at server side
+A functional library JUNK for JS programmers.Inspired by Lodash and Ramda. It's goal is that you should never mutate your data at server side
 
 [![Build
 Status](https://travis-ci.org/vikkyconer/ramdaplus.svg?branch=master)](https://travis-ci.org/vikkyconer/ramdaplus)
